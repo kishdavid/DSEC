@@ -11,7 +11,17 @@
 ?>
     <!--</div> /.container -->
 
-   <footer class="footer pt-80">
+<div id="footer-sidebar" class="secondary">
+<div id="footer-sidebar1">
+<?php
+if(is_active_sidebar('first-footer-widget-area')){
+dynamic_sidebar('first-footer-widget-area');
+}
+?>
+
+</div>
+	
+	<footer class="footer pt-80">
             <!-- Copyright Bar -->
             <section class="copyright pb-60">
                 <div class="container">
@@ -22,7 +32,7 @@
                 </div>
             </section>
             <!-- End Copyright Bar -->
-        </footer>
+    </footer>
 
     <?php 
 	  /*
