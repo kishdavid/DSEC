@@ -4,7 +4,7 @@ Donate link: http://huge-it.com/google-map/
 Tags: google map, google maps, easy map, gmaps, google map plugin, map, maps, map plugin, map markers, map widget, maps, marker, polygons, polylines, post map, wp maps, wp google maps, wp google map, path, streetview, store locator, routes, longitude, location, latitude, google map widget, address, geocoder, pin, place, geo, cross-browser, gpx, openstreetmap, latitude, google earth, googlemaps, kml, custom google map, custom google maps, map styles, gps, google, google maps plugin, widget map, wp map,
 Requires at least: 3.0.1
 Tested up to: 4.5.3
-Stable tag: 2.0.8
+Stable tag: 2.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -254,6 +254,9 @@ In order to install pro version of the plugin, simply follow these steps:
 If you think, that you found a bug in our [WordPress Google Maps](http://huge-it.com/google-map/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com)
 
 == Changelog ==
+
+= 2.0.9 =
+*  Fix with the keyless access to the API and code improvements and optimization.
 
 = 2.0.8 =
 *  Responsive bug fixed.

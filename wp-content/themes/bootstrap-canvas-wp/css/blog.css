@@ -173,10 +173,11 @@ nav > .pager > li > a {
 
 .blog-post {
   margin-bottom: 60px;
-}
+  border-bottom: solid 1px lightblue;
+  }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 21px;
 }
 .blog-post-meta {
   margin-bottom: 20px;

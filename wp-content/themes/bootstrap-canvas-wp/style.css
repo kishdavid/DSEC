@@ -4224,3 +4224,19 @@ ul.project-detail-block, .project-detail-block ul {
     color: rgba(255,255,255,0.85);
 }
 
+#navbar-main {
+  /* Added `.affix-top` class css when the element is top */
+  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+  /* Added `.affix-bottom` class css when the element is footer */
+}
+#navbar-main.affix-top {
+  background: transparent;
+}
+#navbar-main.affix {
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+

@@ -19,6 +19,12 @@ dynamic_sidebar('first-footer-widget-area');
 }
 ?>
 
+<?php
+if(is_active_sidebar('second-footer-widget-area')){
+dynamic_sidebar('second-footer-widget-area');
+}
+?>
+
 </div>
 	
 	<footer class="footer pt-80">

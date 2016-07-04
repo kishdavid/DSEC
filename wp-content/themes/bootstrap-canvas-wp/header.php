@@ -34,7 +34,7 @@
   </head>
   <body <?php body_class(); ?>>
     
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <nav id="navbar-main" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
@@ -53,7 +53,7 @@
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav navbar-nav',
+            'menu_class'        => 'nav navbar-nav navbar-right',
             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker())
           );
