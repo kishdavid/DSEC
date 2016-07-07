@@ -4228,15 +4228,74 @@ ul.project-detail-block, .project-detail-block ul {
   /* Added `.affix-top` class css when the element is top */
   /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
   /* Added `.affix-bottom` class css when the element is footer */
-}
+  z-index: 2000;
+  
+  }
 #navbar-main.affix-top {
-  background: transparent;
-}
-#navbar-main.affix {
-  background: white;
-  top: 0;
+  /*background: transparent; */
+  position: fixed;
   left: 0;
   right: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: none;
+  border-radius: 0px;
+}
+
+#navbar-main ul, li, a {
+  font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+	text-decoration: none;
+    text-transform: uppercase;
+	-webkit-transition: all 0.25s ease 0s;
+	outline: none;
+}
+
+#navbar-main.affix {
+  background: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #f5f5f5;
+  border-radius: 0px;
+}
+
+#navbar-main.affix a, li ,ul{
+  color: #323232
+}
+
+#navbar-main.affix a:hover {
+  color: #4baad3;
+}
+
+#navbar-main.affix-top a:hover {
+  color: #c6e4f1;
 }
 
 
+#navbar-main.affix-top   a, li, ul {
+  color: #fff
+}
+
+#navbar-main .active a, .open a {
+  background-color: inherit!important;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+#navbar-main .active:after  {
+  display: none;
+}
+
+#navbar-main .dropdown-menu {
+  opacity: 0.9!important;
+  margin-top: 10px;
+  right: auto;
+}
+
+#navbar-main .dropdown-menu a, li ,ul{
+  color: #323232
+}

@@ -34,7 +34,7 @@
   </head>
   <body <?php body_class(); ?>>
     
-    <nav id="navbar-main" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="navbar-main" class="navbar navbar-inverse" role="navigation" data-offset-top="197">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">

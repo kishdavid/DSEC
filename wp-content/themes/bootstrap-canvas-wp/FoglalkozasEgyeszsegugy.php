@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-!-- Intro Section -->
+<!-- Intro Section -->
         <section class="inner-intro overlay-dark light-color inner-intro-small">
             <div class="container">
                 <div class="row title">

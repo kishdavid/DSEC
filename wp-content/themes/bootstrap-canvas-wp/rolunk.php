@@ -8,35 +8,36 @@
 
 
 get_header(); ?>
-      <section class="full-screen-intro" id="welcome" style="height: 963px;">
-                    <!-- Bg Image -->
-                    <div class="media-wapper cont-h-100per"></div>
-                    <!-- End Bg Image -->
-        
-                    <!-- Content -->
-                    <div class="full-cap-wraper overlay-dark light-color">
-                        <div class="content-caption light-color parallax parallax-opacity" style="opacity: 0.688474;">
-                            <div class="container">
-                                <h5>D SAFETY ENGINEERING &amp; CONSULTING</h5>
-                                <h2 class="h2">Teljeskörű szolgáltatás a biztonság érdekében</h2>
-                                <div class="row">
-                                    <p class="lead col-md-6 col-md-offset-3">Cégünk teljes körű munkavédelmi és tűzvédelmi szolgáltatásokat nyújt, mérnöki precizitással, kiemelkedő igényességgel, komplex szakmai hozzáállással, hogy Megrendelőink ne kerülhessenek váratlan helyzetbe a biztonság terén.</p>
-                                </div>
-                                <br>
-                                <div class="singlepage-nav"><a class="btn btn-md btn-white-line xs-hidden current-ele" href="#szolgaltatasok">Szolgáltatások</a><span class="btn-space-10 xs-hidden"></span><a class="btn btn-md btn-white" href="#ajanlatkeres">Ajánlatkérés</a></div>
-                            </div>
+	
+		<section class="full-screen-intro" id="welcome" style="height: 100%;">
+            <!-- Bg Image -->
+            <div class="media-wapper cont-h-100per"></div>
+            <!-- End Bg Image -->
+
+            <!-- Content -->
+            <div class="full-cap-wraper overlay-dark light-color">
+                <div class="content-caption light-color parallax parallax-opacity">
+                    <div class="container">
+                        <h5>D SAFETY ENGINEERING & CONSULTING</h5>
+                        <h2 class="h2">Teljeskörű szolgáltatás a biztonság érdekében</h2>
+                        <div class="row">
+                            <p class="lead col-md-6 col-md-offset-3">Cégünk teljes körű munkavédelmi és tűzvédelmi szolgáltatásokat nyújt, mérnöki precizitással, kiemelkedő igényességgel, komplex szakmai hozzáállással, hogy Megrendelőink ne kerülhessenek váratlan helyzetbe a biztonság terén.</p>
                         </div>
+                        <br>
+                        <div class="singlepage-nav"><a class="btn btn-md btn-white-line xs-hidden" href="#szolgaltatasok">Szolgáltatások</a><span class="btn-space-10 xs-hidden"></span><a class="btn btn-md btn-white" href="#ajanlatkeres">Ajánlatkérés</a></div>
                     </div>
-                    <!-- End Content -->
-        
-                    <!-- Intro Scroll Down -->
-                    <div class="intro-scroll-down">
-                        <a class="scroll-down" href="#rolunk">
-                            <i class="fa fa-angle-down fa-5x scroll-down-main"></i>
-                        </a>
-                    </div>
-                    <!-- End Intro Scroll Down -->
-        </section>
+                </div>
+            </div>
+            <!-- End Content -->
+
+            <!-- Intro Scroll Down -->
+            <div class="intro-scroll-down">
+                <a class="scroll-down" href="#rolunk">
+                    <i class="fa fa-angle-down fa-5x scroll-down-main"></i>
+                </a>
+            </div>
+            <!-- End Intro Scroll Down -->
+</section>
 		
 		<section id="rolunk" class="wow fadeIn ptb ptb-sm-80 animated" style="visibility: visible; animation-name: fadeIn;">
                     <div class="container">
