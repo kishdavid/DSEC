@@ -13,6 +13,13 @@
 
 <div id="footer-sidebar" class="secondary">
 <div id="footer-sidebar1">
+
+<?php
+if(is_active_sidebar('third-footer-widget-area')){
+dynamic_sidebar('third-footer-widget-area');
+}
+?>
+
 <?php
 if(is_active_sidebar('first-footer-widget-area')){
 dynamic_sidebar('first-footer-widget-area');

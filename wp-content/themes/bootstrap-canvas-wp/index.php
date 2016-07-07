@@ -39,5 +39,12 @@
 			</div>
 		</div>
 	</section>	  
-      
+     
+
+<?php
+if(is_active_sidebar('fourth-footer-widget-area')){
+dynamic_sidebar('fourth-footer-widget-area');
+}
+?>	
+	 
 	<?php get_footer(); ?>

@@ -34,16 +34,12 @@
 	</section>	  
 	
 	
-      <div class="row">
 
-        <div class="col-sm-8 blog-main">
-
-          <?php get_template_part( 'loop', 'single' ); ?>
-
-        </div><!-- /.blog-main -->
-
-       
-
-      </div><!-- /.row -->
       
-	<?php get_footer(); ?>
+<?php
+if(is_active_sidebar('fourth-footer-widget-area')){
+dynamic_sidebar('fourth-footer-widget-area');
+}
+?>	
+
+	  <?php get_footer(); ?>

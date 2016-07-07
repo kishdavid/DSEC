@@ -104,6 +104,14 @@ get_header(); ?>
                         </div>
                     </div>
         </section>
+
+<?php
+if(is_active_sidebar('fourth-footer-widget-area')){
+dynamic_sidebar('fourth-footer-widget-area');
+}
+?>		
+		
+		<!--
 		<section id="action-box" class="dark-bg ptb-60 singlepage-nav">
             <div class="container">
                 <div class="row">
@@ -116,6 +124,8 @@ get_header(); ?>
                 </div>
             </div>
         </section>
+-->
+
 		<section id="szolgaltatasok" class="ptb ptb-sm-80">
             <div class="wow fadeInLeft container text-center animated" style="visibility: visible; animation-name: fadeInLeft;">
                 <h3>Szolgáltatások</h3>
@@ -166,7 +176,7 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-		<section id="kapcsolat" class="ptb ptb-sm-80">
+<!--		<section id="kapcsolat" class="ptb ptb-sm-80">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
@@ -209,8 +219,9 @@ get_header(); ?>
                 </div>
             </div>
         </section>
+-->		
 		
-		
+<!--
 		<section id="social" class="gray-bg ptb ptb-sm-80">
             <div class="container text-center">
                 <div class="row">
@@ -251,4 +262,5 @@ get_header(); ?>
                 </div>
             </div>
         </section>
+-->
 	<?php get_footer(); ?>

@@ -23,15 +23,26 @@
        
 	<div class="clearfix"></div>
 	
-      <div class="row">
+	<section id="blog" class="wow fadeIn pt pb-80">
+		<div class="container text-left">
+			<div class="row text-left">
+				<div class="col-md-12">
+					<div class="spacer-15"></div>
+					<div class="row">
+						<div class="col-sm-8 blog-main">
+							 <?php get_template_part( 'loop', 'page' ); ?>
+						</div><!-- /.blog-main -->
+					</div><!-- /.row -->
+				</div>
+			</div>
+		</div>
+	</section>	  
 
-        <div class="col-sm-8 blog-main">
-
-          <?php get_template_part( 'loop', 'page' ); ?>
-
-        </div><!-- /.blog-main -->
-
-
-      </div><!-- /.row -->
       
-	<?php get_footer(); ?>
+<?php
+if(is_active_sidebar('fourth-footer-widget-area')){
+dynamic_sidebar('fourth-footer-widget-area');
+}
+?>	
+
+	  <?php get_footer(); ?>

@@ -1,5 +1,5 @@
 === WP Google Maps ===
-Contributors: WPGMaps, NickDuncan, CodeCabin_, Jarryd Long
+Contributors: WPGMaps, NickDuncan, CodeCabin_, Jarryd Long, DylanAuty
 Donate link: http://www.wpgmaps.com
 Tags: google maps, maps, map, map markers, google, google map, google maps plugin, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget, map themes
 Requires at least: 3.5
@@ -206,6 +206,11 @@ We no longer support timthumb and we have opted to remove it from WP Google Maps
 Please upgrade your version of WP Google Maps to version 6.0.27 as it includes multiple security improvements.
 
 == Changelog ==
+
+= 6.3.13 - 2016-07-07 - Medium priority =
+* Revised Maps API Dequeue Script Added
+* Remove Style dequeue script as this was causing UI conflicts
+* Added option to disable Maps API from being loaded on front end
 
 = 6.3.12 - 2016-06-27 - Medium priority =
 * Modified the API key notification to make it simpler and more intuitive
