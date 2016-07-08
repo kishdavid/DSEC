@@ -2954,7 +2954,13 @@ height:100%;
         margin: 0px;
         padding-top: 0;
         padding-bottom: 15px;
-    }
+		font-size: 13px;
+		letter-spacing: 2px;
+		line-height: 23px;
+		font-weight: 600;
+		}
+	
+
 
 .widget-search {
     position: relative;
@@ -3006,7 +3012,7 @@ height:100%;
 
         .sidebar-widget ul li a {
             display: inline-block;
-            padding: 4px 0px;
+            padding: 0px 0px;
             font-size: 13px;
             color: #323232;
         }
@@ -3365,7 +3371,7 @@ ul.project-detail-block, .project-detail-block ul {
     .blog-post .post-meta, .comment-list .post-meta, .sidebar-widget .post-meta {
         text-transform: uppercase;
         color: #999;
-        font-size: 13px;
+        font-size: 11px;
     }
 
         .blog-post .post-meta span, .comment-list .post-meta span {

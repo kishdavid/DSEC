@@ -4,7 +4,7 @@
 
 body {
   word-wrap: break-word;
-  font-family: georgia, serif !important;
+  /*font-family: georgia, serif !important; */
   color: #555;
 }
 
@@ -173,7 +173,7 @@ nav > .pager > li > a {
 
 .blog-post {
   margin-bottom: 60px;
-  border-bottom: solid 1px lightblue;
+  border-bottom: solid 1px #f5f5f5;
   }
 .blog-post-title {
   margin-bottom: 5px;
