@@ -16,7 +16,7 @@
 ?>
         <div class="entry post-entry clearfix">
 		<p>
-        <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?>
+        <?php the_content( __( 'Tovább <span class="meta-nav">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?>
         </p>
 		</div>
         

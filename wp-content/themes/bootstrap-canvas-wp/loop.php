@@ -33,10 +33,10 @@
         </a>
         <?php endif; ?>
         <?php if ( !is_singular() ) : ?>
-        <h4 class="blog-post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php esc_attr_e( 'Permanent Link to ', 'bootstrapcanvaswp' ) . esc_attr( the_title_attribute() ); ?>">
+        <h4 class="blog-post-title post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php esc_attr_e( 'Permanent Link to ', 'bootstrapcanvaswp' ) . esc_attr( the_title_attribute() ); ?>">
         <?php the_title(); ?></a></h4>
         <?php else : ?>
-        <h4 class="blog-post-title"><?php the_title(); ?></a></h4>
+        <h4 class="blog-post-title post-header"><?php the_title(); ?></a></h4>
         <?php endif; ?>
         <?php if ( !get_the_title() ) : ?>
         <p class="blog-post-meta post-meta"><span class="glyphicon glyphicon-calendar"></span> <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php esc_attr_e( 'Permanent Link to ', 'bootstrapcanvaswp' ) . get_the_title() ? esc_attr( the_title_attribute() ) : esc_attr_e( '[No Title]', 'bootstrapcanvaswp' ); ?>"><?php the_time( $date_format ) ?></a> | <span class="glyphicon glyphicon-user"></span> <?php the_author_link() ?></p>
@@ -55,9 +55,9 @@
             'before'           => '<ul class="pager">',
             'after'            => '</ul>',
             'next_or_number'   => 'next',
-            'separator'        => '<li>',
-            'nextpagelink'     => __( 'Next &rarr;', 'bootstrapcanvaswp' ),
-            'previouspagelink' => __( '&larr; Previous', 'bootstrapcanvaswp' )
+            'separator'        => ' | ',
+            'nextpagelink'     => __( 'Tovább &rarr;', 'bootstrapcanvaswp' ),
+            'previouspagelink' => __( '&larr; Vissza', 'bootstrapcanvaswp' )
           );
           wp_link_pages( $link_args );
         ?>
@@ -86,8 +86,8 @@
 	  ?>
       <nav>
         <ul class="pager">
-          <li><?php next_posts_link( __( '<span class=\"meta-nav\">&larr;</span> Older posts', 'bootstrapcanvaswp' ) ); ?></li>
-          <li><?php previous_posts_link( __( 'Newer posts <span class=\"meta-nav\">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?></li>
+          <li class="pull-left"><?php previous_posts_link( __( '<span class=\"meta-nav\">&larr;</span> Előző oldal', 'bootstrapcanvaswp' ) ); ?></li>
+		  <li class="pull-right"><?php next_posts_link( __( 'Következő oldal <span class=\"meta-nav\">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?></li>
         </ul>
       </nav>
       <?php endif; ?>
