@@ -43,7 +43,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<?php /*bloginfo( 'name' ); */?>
+			<img id="brand-image-black" alt="Website Logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-black.png" /> 
+			<img id="brand-image-white" alt="Website Logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-white.png" /> 
+			</a>
         </div>
 		<?php
           wp_nav_menu( array(

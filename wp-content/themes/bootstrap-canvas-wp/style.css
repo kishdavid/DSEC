@@ -4305,3 +4305,41 @@ ul.project-detail-block, .project-detail-block ul {
 #navbar-main .dropdown-menu a, li ,ul{
   color: #323232
 }
+
+/*referenciak page styleing */
+
+#post-60 .post-header, #post-60 .post-meta{
+	display: none;
+}
+
+.testimonial-entry-title {
+	display: none!important;
+}
+
+.testimonial-entry {
+	text-align: center;
+	font-size: 16px;
+	font-weight: strong;
+}
+
+.navbar-brand {
+	padding: 0px 15px !important;
+}
+
+.navbar-brand img {
+	height: 50px;
+}
+
+@media (min-width: 768px) {
+.navbar-header {
+	display: block !important;
+}
+}
+
+.affix-top #brand-image-black {
+	display: none;
+}
+
+.affix #brand-image-white {
+	display: none;
+}

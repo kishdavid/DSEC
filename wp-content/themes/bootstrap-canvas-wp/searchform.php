@@ -12,7 +12,7 @@
 	<div class="form-group">
     <div class="input-group">
 		<label class="sr-only" for="s"><?php _x( 'Search for:', 'label', 'bootstrapcanvaswp' ); ?></label>
-		<input type="text" class="form-control" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Keresés" background="<?php echo get_template_directory() . '/img/searchicon.png';?>">
+		<input type="text" class="form-control" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Keresés" background="<?php bloginfo('stylesheet_directory'); ?>/img/searchicon.png">
 		<input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Keresés', 'submit button', 'bootstrapcanvaswp' ); ?>" />
 	</div>
     </div>

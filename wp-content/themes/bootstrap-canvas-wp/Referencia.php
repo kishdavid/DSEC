@@ -13,7 +13,7 @@ get_header(); ?>
         <section class="inner-intro overlay-dark light-color inner-intro-small">
             <div class="container">
                 <div class="row title">
-                    <h2 class="h2">Munkavédelem</h2>
+                    <h2 class="h2">Referenciák</h2>
                 </div>
             </div>
         </section>
