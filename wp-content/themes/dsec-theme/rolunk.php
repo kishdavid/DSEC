@@ -131,30 +131,40 @@ dynamic_sidebar('fourth-footer-widget-area');
                 <h3>Szolgáltatások</h3>
                 <div class="spacer-60"></div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 mb-45">
+                    <div class="col-md-5 col-sm-6 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
                         <h5>Munkavédelem</h5>
                         <p>Mit reagálnak az emberek amikor szóba kerül a munkavédelem vagy, hogy valaki a munkavédelemmel foglalkozik? "Ja, munkavédelem, az az oktatás amit alá kellett írni…"</p>
-                        <a href="/munkavedelem"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
+                        <a href="<?php bloginfo('url'); ?>/szolgaltatasok/munkavedelem"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
                     </div>
         
-                    <div class="col-md-4 col-sm-6 mb-45">
+                    <div class="col-md-5 col-md-offset-2 col-sm-6 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-flame-outline"></i></div>
                         <h5>Tűzvédelem</h5>
                         <p>Rengeteg tűzvédelmi előírásnak kell megfelelni a munkáltatónak, a gazdasági társaságnak és munkavállalónak egyaránt. Ezen tűzvédelmi előírások között kiigazodni viszonylag nehéz, amit nem kell az embernek egyedül megoldania.</p>
                         <p>
-                            <a href="/tuzvedelem"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
+                            <a href="<?php bloginfo('url'); ?>/szolgaltatasok/tuzvedelem"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
                         </p>
                     </div>
                   
-                    <div class="col-md-4 col-sm-6 mb-45">
+                    <div class="col-md-5 col-sm-6 mb-45">
+                        <div class="page-icon-top"><i class="ion ion-ios-medkit-outline"></i></div>
+                        <h5>FOGLALKOZÁS EGÉSZSÉGŰGY</h5>
+                        <p>Lorem ipsum dolor sit amet, dui arcu suscipit ultrices nisl semper luctus, lectus neque, interdum tempor. Interdum eu lorem sagittis donec. Gravida vestibulum eu in fermentum, gravida risus lectus, praesent auctor placerat. Nam est amet lorem cras sagittis eu.</p>
+                        <p>
+                            <a href="<?php bloginfo('url'); ?>/szolgaltatasok/foglalkozas-egeszsegugy"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
+                        </p>
+                    </div>
+					
+					<div class="col-md-5 col-md-offset-2 col-sm-6 mb-45"">
                         <div class="page-icon-top"><i class="ion ion-ios-copy-outline"></i></div>
                         <h5>Felülvizsgálatok</h5>
                         <p>Miért is szükségesek bizonyos munkavédelmi és tűzvédelmi felülvizsgálatok és mit is kell felülvizsgálni? Egyrészről mert törvények, rendeletek előírják így kötelező érvényű a felülvizsgálat.</p>
                         <p>
-                            <a href="/felulvizsgalatok"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
+                            <a href="<?php bloginfo('url'); ?>/szolgaltatasok/felulvizsgalatok"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
                         </p>
                     </div>
+					
                 </div>
             </div>
         </section>
