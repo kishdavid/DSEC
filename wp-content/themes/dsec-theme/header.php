@@ -34,7 +34,9 @@
   </head>
   <body <?php body_class(); ?>>
     
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
@@ -43,7 +45,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<?php /*bloginfo( 'name' ); */?>
+			<img id="brand-image" alt="Website Logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-white.png" /> 
+			
+			</a>
         </div>
 		<?php
           wp_nav_menu( array(
@@ -53,15 +59,15 @@
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav navbar-nav',
-            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'menu_class'        => 'nav navbar-nav navbar-right',
+            // 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker())
           );
         ?><!--/.nav-collapse -->
       </div>
     </nav>
     
-    <?php $header_image = get_header_image(); ?>
+    <?php /*<?php $header_image = get_header_image(); ?>
     <div class="blog-header" <?php if ( get_header_image() ) : ?>style="background-image: url( '<?php echo esc_url( $header_image ); ?>'); background-size: cover; background-repeat: no-repeat; background-position: top left; margin-bottom: 30px; width: 100%; height: 100%; min-height: <?php echo HEADER_IMAGE_HEIGHT; ?>px; position: relative;"<?php endif; ?>>
       <div class="container" <?php if ( get_header_image() ) : ?>style="height: auto; min-height: <?php echo HEADER_IMAGE_HEIGHT; ?>px; position: relative;"<?php endif; ?>>
         <?php if ( display_header_text() ) : ?>
@@ -73,6 +79,6 @@
         <p class="lead blog-description" style="visibility: hidden; margin: 0; padding: 0; font-size: 0;"><?php bloginfo( 'description' ); ?></p>
         <?php endif; ?>
       </div>
-    </div>
+    </div>*/ ?>
     
-    <div class="container">
+    <?php /*<div class="container">*/ ?>

@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 
 	<h3 class="comments-title">
 		<?php
-			printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'bootstrapcanvaswp' ),
+			printf( _n( 'Egy hozzászólás ehhez: &ldquo;%2$s&rdquo;', '%1$s hozzászólás ehhez: &ldquo;%2$s&rdquo;', get_comments_number(), 'bootstrapcanvaswp' ),
 				number_format_i18n( get_comments_number() ), get_the_title() );
 		?>
 	</h3>
@@ -35,8 +35,8 @@ if ( post_password_required() ) {
     <nav id="comment-nav-above">
       <ul class="pager">
         <h1 class="sr-only"><?php _e( 'Comment navigation', 'bootstrapcanvaswp' ); ?></h1>
-        <li><?php previous_comments_link( __( '&larr; Older Comments', 'bootstrapcanvaswp' ) ); ?></li>
-        <li><?php next_comments_link( __( 'Newer Comments &rarr;', 'bootstrapcanvaswp' ) ); ?></li>
+        <li><?php previous_comments_link( __( '&larr; Régebbi hozzászólások', 'bootstrapcanvaswp' ) ); ?></li>
+        <li><?php next_comments_link( __( 'Újabb hozzászólsok &rarr;', 'bootstrapcanvaswp' ) ); ?></li>
       </ul>
     </nav><!-- #comment-nav-above -->
 	<?php endif; // Check for comment navigation. ?>
@@ -49,8 +49,8 @@ if ( post_password_required() ) {
     <nav id="comment-nav-below">
       <ul class="pager">
         <h1 class="sr-only"><?php _e( 'Comment navigation', 'bootstrapcanvaswp' ); ?></h1>
-        <li><?php previous_comments_link( __( '&larr; Older Comments', 'bootstrapcanvaswp' ) ); ?></li>
-        <li><?php next_comments_link( __( 'Newer Comments &rarr;', 'bootstrapcanvaswp' ) ); ?></li>
+        <li><?php previous_comments_link( __( '&larr; Régebbi hozzászólások', 'bootstrapcanvaswp' ) ); ?></li>
+        <li><?php next_comments_link( __( 'Újabb hozászólások &rarr;', 'bootstrapcanvaswp' ) ); ?></li>
       </ul>
     </nav><!-- #comment-nav-below -->
 	<?php endif; // Check for comment navigation. ?>
@@ -65,36 +65,36 @@ if ( post_password_required() ) {
     $args = array(
 	  'id_form'           => 'commentform',
 	  'id_submit'         => 'submit',
-	  'title_reply'       => __( 'Leave a Reply', 'bootstrapcanvaswp' ),
-	  'title_reply_to'    => __( 'Leave a Reply to %s', 'bootstrapcanvaswp' ),
-	  'cancel_reply_link' => __( 'Cancel Reply', 'bootstrapcanvaswp' ),
-	  'label_submit'      => __( 'Post Comment', 'bootstrapcanvaswp' ),
+	  'title_reply'       => __( 'Szólj hozzá', 'bootstrapcanvaswp' ),
+	  'title_reply_to'    => __( 'Szólj hozzá ehhez %s', 'bootstrapcanvaswp' ),
+	  'cancel_reply_link' => __( 'Mégsem', 'bootstrapcanvaswp' ),
+	  'label_submit'      => __( 'Küldés', 'bootstrapcanvaswp' ),
 	
-	  'comment_field' =>  '<div class="form-group"><p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'bootstrapcanvaswp' ) .
+	  'comment_field' =>  '<div class="form-group"><p class="comment-form-comment"><label for="comment">' . _x( 'Hozzászólás', 'noun', 'bootstrapcanvaswp' ) .
 		'</label><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true">' .
 		'</textarea></p></div>',
 	
 	  'must_log_in' => '<p class="must-log-in">' .
 		sprintf(
-		  __( 'You must be <a href="%s">logged in</a> to post a comment.', 'bootstrapcanvaswp' ),
+		  __( 'hozzászóláshoz be kell <a href="%s">jelentkezni</a>.', 'bootstrapcanvaswp' ),
 		  wp_login_url( apply_filters( 'the_permalink', get_permalink() ) )
 		) . '</p>',
 	
 	  'logged_in_as' => '<p class="logged-in-as">' .
 		sprintf(
-		__( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'bootstrapcanvaswp' ),
+		__( 'Bejelentkezve mint: <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Kijelentkezés</a>', 'bootstrapcanvaswp' ),
 		  admin_url( 'profile.php' ),
 		  $user_identity,
 		  wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
 		) . '</p>',
 	
 	  'comment_notes_before' => '<p class="comment-notes">' .
-		__( 'Your email address will not be published.', 'bootstrapcanvaswp' ) .
+		__( 'Az email cím nem kerül publikálásra.', 'bootstrapcanvaswp' ) .
 		'</p>',
 	
 	  'comment_notes_after' => '<p class="form-allowed-tags">' .
 		sprintf(
-		  __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'bootstrapcanvaswp' ),
+		  __( 'A szövegben a következő <abbr title="HyperText Markup Language">HTML</abbr> tegek és attributumok használhatók: %s', 'bootstrapcanvaswp' ),
 		  ' <code>' . allowed_tags() . '</code>'
 		) . '</p>',
 	
@@ -102,10 +102,10 @@ if ( post_password_required() ) {
 	
 		'author' =>
 		  '<div class="form-group"><p class="comment-form-author">' .
-		  '<label for="author">' . __( 'Name', 'bootstrapcanvaswp' ) . '</label> ' .
+		  '<label for="author">' . __( 'Név', 'bootstrapcanvaswp' ) . '</label> ' .
 		  ( $req ? '<span class="required">*</span>' : '' ) .
 		  '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-		  '" size="30" placeholder="Name" /></p></div>',
+		  '" size="30" placeholder="Név" /></p></div>',
 	
 		'email' =>
 		  '<div class="form-group"><p class="comment-form-email"><label for="email">' . __( 'Email', 'bootstrapcanvaswp' ) . '</label> ' .

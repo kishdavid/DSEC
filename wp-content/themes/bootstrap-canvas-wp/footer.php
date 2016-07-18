@@ -9,43 +9,23 @@
  * @since Bootstrap Canvas WP 1.0
  */
 ?>
-    <!--</div> /.container -->
+    </div><!-- /.container -->
 
-<div id="footer-sidebar" class="secondary">
-<div id="footer-sidebar1">
-
-<?php
-if(is_active_sidebar('third-footer-widget-area')){
-dynamic_sidebar('third-footer-widget-area');
-}
-?>
-
-<?php
-if(is_active_sidebar('first-footer-widget-area')){
-dynamic_sidebar('first-footer-widget-area');
-}
-?>
-
-<?php
-if(is_active_sidebar('second-footer-widget-area')){
-dynamic_sidebar('second-footer-widget-area');
-}
-?>
-
-</div>
-	
-	<footer class="footer pt-80">
-            <!-- Copyright Bar -->
-            <section class="copyright pb-60">
-                <div class="container">
-                    <p class="">
-                        © 2015 <b>D SAFETY ENGINEERING &amp; CONSULTING Kft.</b> Minden jog fenntartva.
-                        <br>
-                    </p>
-                </div>
-            </section>
-            <!-- End Copyright Bar -->
-    </footer>
+    <div class="blog-footer">
+    
+      <?php get_sidebar( 'footer' ); ?>
+      
+	  <?php 
+	  $copyright_text = get_theme_mod( 'copyrighttext', '' ); ?>
+	  <?php if ( $copyright_text !== '' ) : ?>
+      <p class="copyright"><?php echo $copyright_text; ?></p>
+      <?php else: ?>
+      <p class="copyright"><?php _e( 'Blog template built for <a href="' . esc_url( 'http://getbootstrap.com', 'bootstrapcanvaswp' ) . '">Bootstrap</a> by <a href="' . esc_url( 'https://twitter.com/mdo', 'bootstrapcanvaswp' ) . '">@mdo</a>' ); ?></p>
+      <?php endif; ?>
+      <p>
+        <a href="#"><?php _e( 'Back to top', 'bootstrapcanvaswp' ); ?></a>
+      </p>
+    </div>
 
     <?php 
 	  /*

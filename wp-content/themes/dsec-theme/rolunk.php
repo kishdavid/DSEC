@@ -43,7 +43,7 @@ get_header(); ?>
                     <div class="container">
                         <div class="row text-center">
                             <div class="col-md-12">
-                                <h3 class="h4">Rólunk</h3>
+                                <h3>Rólunk</h3>
                                 <div class="spacer-15"></div>
                                 <p class="lead">Kedves Látogató!</p><p class="lead">Örömmel üdvözöljük a D Safety Engineering &amp; Consulting Kft. honlapján. Engedje meg, hogy néhány mondatban bemutassuk tevékenységünket.</p><p class="lead">Több éves szakmai tapasztalatunk alapján arra jutottunk, hogy kevés olyan munkavédelmi és tűzvédelmi cég található Magyarországon, amely  teljes körű, átlátható és megrendelő centrikus szolgáltatást nyújtana partnereinek.</p><p class="lead">A legtöbb vállalkozás kiragad egy számára szimpatikus szegmenst a munka és tűzvédelem világából és azon belül nyújtja szolgáltatásait. Sajnos, ez rendkívüli módon megbonyolítja a napi ügyintézést, mivel az érintett Ügyfelek egyszerre több szolgáltató céggel kényszerülnek együtt működni, és ezáltal lényeges információk, mint a törvényi szabályozások, követelmények naprakészen való követése és betartatása elsikkadhatnak. Mindemellett rengeteg időt és energiát igényel az Ügyfél részéről ennek az átláthatatlan folyamatnak a nyomon követése.</p><p class="lead">Éppen ezért született meg a D Safety Engineering &amp; Consulting Kft., mely megoldást nyújt ezekre a problémákra. A Megrendelőnek nem marad más dolga, mint felvenni velünk a kapcsolatot és mi mindent elintézünk munka- és tűzvédelem területén A-tól Z-ig:</p>
                             </div>

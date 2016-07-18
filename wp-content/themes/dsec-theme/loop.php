@@ -17,6 +17,7 @@
  * @since Bootstrap Canvas WP 1.0
  */
 ?>
+
 	  <?php 
 	  /* Start the Loop */
 	  if (have_posts()) : while (have_posts()) : the_post(); 
@@ -32,15 +33,15 @@
         </a>
         <?php endif; ?>
         <?php if ( !is_singular() ) : ?>
-        <h2 class="blog-post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php esc_attr_e( 'Permanent Link to ', 'bootstrapcanvaswp' ) . esc_attr( the_title_attribute() ); ?>">
-        <?php the_title(); ?></a></h2>
+        <h4 class="blog-post-title post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php esc_attr_e( 'Permanent Link to ', 'bootstrapcanvaswp' ) . esc_attr( the_title_attribute() ); ?>">
+        <?php the_title(); ?></a></h4>
         <?php else : ?>
-        <h2 class="blog-post-title"><?php the_title(); ?></a></h2>
+        <h4 class="blog-post-title post-header"><?php the_title(); ?></a></h4>
         <?php endif; ?>
         <?php if ( !get_the_title() ) : ?>
-        <p class="blog-post-meta"><span class="glyphicon glyphicon-calendar"></span> <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php esc_attr_e( 'Permanent Link to ', 'bootstrapcanvaswp' ) . get_the_title() ? esc_attr( the_title_attribute() ) : esc_attr_e( '[No Title]', 'bootstrapcanvaswp' ); ?>"><?php the_time( $date_format ) ?></a> by <span class="glyphicon glyphicon-user"></span> <?php the_author_link() ?></p>
+        <p class="blog-post-meta post-meta"><span class="glyphicon glyphicon-calendar"></span> <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php esc_attr_e( 'Permanent Link to ', 'bootstrapcanvaswp' ) . get_the_title() ? esc_attr( the_title_attribute() ) : esc_attr_e( '[No Title]', 'bootstrapcanvaswp' ); ?>"><?php the_time( $date_format ) ?></a> | <span class="glyphicon glyphicon-user"></span> <?php the_author_link() ?></p>
         <?php else : ?>
-        <p class="blog-post-meta"><span class="glyphicon glyphicon-calendar"></span> <?php the_time( $date_format ) ?> by <span class="glyphicon glyphicon-user"></span> <?php the_author_link() ?></p>
+        <p class="blog-post-meta post-meta"><span class="glyphicon glyphicon-calendar"></span> <?php the_time( $date_format ) ?> | <span class="glyphicon glyphicon-user"></span> <?php the_author_link() ?></p>
         <?php endif; ?>
 
         <?php 
@@ -54,23 +55,23 @@
             'before'           => '<ul class="pager">',
             'after'            => '</ul>',
             'next_or_number'   => 'next',
-            'separator'        => '<li>',
-            'nextpagelink'     => __( 'Next &rarr;', 'bootstrapcanvaswp' ),
-            'previouspagelink' => __( '&larr; Previous', 'bootstrapcanvaswp' )
+            'separator'        => ' | ',
+            'nextpagelink'     => __( 'Tovább &rarr;', 'bootstrapcanvaswp' ),
+            'previouspagelink' => __( '&larr; Vissza', 'bootstrapcanvaswp' )
           );
           wp_link_pages( $link_args );
         ?>
-        <p class="blog-post-meta">
+        <p class="blog-post-meta post-meta">
         <?php if ( is_single() ) : ?>
         <span class="glyphicon glyphicon-folder-open"></span> Posted in <?php the_category(', ') ?> 
         <strong>|</strong>
         <?php endif; ?> 
         <?php if ( is_user_logged_in() ) : ?>
-        <?php edit_post_link(__( 'Edit', 'bootstrapcanvaswp' ),'<span class="glyphicon glyphicon-pencil"></span> ','<strong> |</strong>'); ?> 
+        <?php edit_post_link(__( 'Szerkesztés', 'bootstrapcanvaswp' ),'<span class="glyphicon glyphicon-pencil"></span> ','<strong> |</strong>'); ?> 
         <?php endif; ?> 
-        <span class="glyphicon glyphicon-comment"></span> <?php comments_popup_link( __( 'No Comments', 'bootstrapcanvaswp' ), __( '1 Comment', 'bootstrapcanvaswp' ), __( '% Comments', 'bootstrapcanvaswp' ) ); ?></p>
+        <span class="glyphicon glyphicon-comment"></span> <?php comments_popup_link( __( 'Nincs hozzászólás', 'bootstrapcanvaswp' ), __( '1 hozzászólás', 'bootstrapcanvaswp' ), __( '% hozzászólás', 'bootstrapcanvaswp' ) ); ?></p>
         <?php if ( has_tag() ) : ?>
-          <p class="blog-post-meta"><span class="glyphicon glyphicon-tags"></span> <?php the_tags( __( 'Tags: ', 'bootstrapcanvaswp' ) ); ?></p>
+          <p class="blog-post-meta post-meta"><span class="glyphicon glyphicon-tags"></span> <?php the_tags( __( 'Címkék: ', 'bootstrapcanvaswp' ) ); ?></p>
         <?php endif; ?>
         <?php comments_template(); ?>
       </div><!-- /.blog-post -->
@@ -85,8 +86,8 @@
 	  ?>
       <nav>
         <ul class="pager">
-          <li><?php next_posts_link( __( '<span class=\"meta-nav\">&larr;</span> Older posts', 'bootstrapcanvaswp' ) ); ?></li>
-          <li><?php previous_posts_link( __( 'Newer posts <span class=\"meta-nav\">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?></li>
+          <li class="pull-left"><?php previous_posts_link( __( '<span class=\"meta-nav\">&larr;</span> Előző oldal', 'bootstrapcanvaswp' ) ); ?></li>
+		  <li class="pull-right"><?php next_posts_link( __( 'Következő oldal <span class=\"meta-nav\">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?></li>
         </ul>
       </nav>
       <?php endif; ?>

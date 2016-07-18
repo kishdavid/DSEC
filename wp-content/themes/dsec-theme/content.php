@@ -14,7 +14,9 @@
  * @since Bootstrap Canvas WP 1.0
  */
 ?>
-        <div class="entry clearfix">
-        <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?>
-        </div>
+        <div class="entry post-entry clearfix">
+		<p>
+        <?php the_content( __( 'Tovább <span class="meta-nav">&rarr;</span>', 'bootstrapcanvaswp' ) ); ?>
+        </p>
+		</div>
         

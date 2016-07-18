@@ -8,18 +8,6 @@
 
 	get_header(); ?>
 
-	<section class="inner-intro overlay-dark light-color inner-intro-small">
-		<div class="container">
-			<div class="row title">
-				<h2 class="h2"><?php echo($pagename); ?></h2>
-			</div>
-		</div>
-	</section>
-       
-	<div class="clearfix"></div>
-tag	   
-	
-	
       <div class="row">
 
         <div class="col-sm-8 blog-main">
