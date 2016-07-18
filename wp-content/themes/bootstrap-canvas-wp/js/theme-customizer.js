@@ -102,7 +102,7 @@
 	//Update active menu caret color in real time...
 	wp.customize( 'background_color', function( value ) {
 		value.bind( function( newval ) {
-			$('.blog-nav .active').css('color', newval );
+			//$('.blog-nav .active').css('color', newval );
 		} );
 	} );
 	

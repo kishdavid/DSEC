@@ -34,7 +34,9 @@
   </head>
   <body <?php body_class(); ?>>
     
-    <nav id="navbar-main" class="navbar navbar-inverse" role="navigation" data-offset-top="197">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
@@ -45,8 +47,8 @@
           </button>
           <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<?php /*bloginfo( 'name' ); */?>
-			<img id="brand-image-black" alt="Website Logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-black.png" /> 
-			<img id="brand-image-white" alt="Website Logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-white.png" /> 
+			<img id="brand-image" alt="Website Logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-white.png" /> 
+			
 			</a>
         </div>
 		<?php
@@ -58,7 +60,7 @@
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
             'menu_class'        => 'nav navbar-nav navbar-right',
-            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            // 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker())
           );
         ?><!--/.nav-collapse -->

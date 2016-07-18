@@ -64,8 +64,7 @@ a img.aligncenter {
     background: #fff;
     border: 1px solid #f0f0f0;
     max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
+padding: 5px 3px 10px; text-align: center;
 }
 
 .wp-caption.alignnone {
@@ -103,7 +102,7 @@ a img.aligncenter {
 }
 
 .wp-post-image {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .sticky {
@@ -113,192 +112,145 @@ a img.aligncenter {
 }
 
 .entry {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .widget {
-	text-align: initial;
+    text-align: initial;
 }
 
-.widget ul {
-    list-style: none;
-    padding: 0;
-}
+    .widget ul {
+        list-style: none;
+        padding: 0;
+    }
 
 #searchsubmit {
-	margin: 4px 0;
+    margin: 4px 0;
 }
 
 .comment-list {
-	padding: 0;
+    padding: 0;
 }
 
-.comment-list, 
+.comment-list,
 .children:nth-child(n+1) {
-	list-style: none;
+    list-style: none;
 }
 
 @media (max-width: 767px) {
-	.comment-list, 
-	.children:nth-child(n+1) {
-		padding: 0;
-  	} 
+    .comment-list,
+    .children:nth-child(n+1) {
+        padding: 0;
+    }
 }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
-}*/
+    .screen-reader-text:focus {
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        color: #21759b;
+        display: block;
+        font-size: 14px;
+        font-size: 0.875rem;
+        font-weight: bold;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000; /* Above WP toolbar. */
+    }
 
-@import url("navigation.css");
-@import url("./plugin/flexslider.css");
-@import url("./plugin/owl.carousel.css");
-@import url("./plugin/mediaelementplayer.css");
-@import url("./plugin/colorbox.css");
-@import url("./plugin/jquery.fs.tipper.css");
-
-@font-face {
+*/ @import url("navigation.css"); @import url("./plugin/flexslider.css"); @import url("./plugin/owl.carousel.css"); @import url("./plugin/mediaelementplayer.css"); @import url("./plugin/colorbox.css"); @import url("./plugin/jquery.fs.tipper.css"); @font-face {
     font-family: 'raleway';
     src: url('raleway-black-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-black-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-black-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-black-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-black-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-black-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-black-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-black-webfont.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-bold-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-bold-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-bold-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-bold-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-bold-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-bold-webfont.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-extrabold-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-extrabold-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-extrabold-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-extrabold-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-extrabold-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-extrabold-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-extrabold-webfont.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-extralight-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-extralight-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-extralight-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-extralight-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-extralight-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-extralight-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-extralight-webfont.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-italic-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-italic-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-italic-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-italic-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-italic-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-italic-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-light-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-light-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-light-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-light-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'), /*url('../css/fonts/raleway/raleway-light-webfont.woff2')*/ format('woff2'), url('../css/fonts/raleway/raleway-light-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-light-webfont.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-medium-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-medium-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-medium-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-medium-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-medium-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-medium-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-medium-webfont.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-regular-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-regular-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-regular-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-regular-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-regular-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-regular-webfont.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-semibold-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-semibold-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-semibold-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-semibold-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-semibold-webfont.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('../css/fonts/raleway/raleway-thin-webfont.eot');
-    src: url('../css/fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
-         url('../css/fonts/raleway/raleway-thin-webfont.woff') format('woff'),
-         url('../css/fonts/raleway/raleway-thin-webfont.ttf') format('truetype');
+    src: url('../css/fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/raleway/raleway-thin-webfont.woff2') format('woff2'), url('../css/fonts/raleway/raleway-thin-webfont.woff') format('woff'), url('../css/fonts/raleway/raleway-thin-webfont.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
-
 }
 
 /* 
@@ -365,7 +317,7 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -425,9 +377,11 @@ hr {
     border-left: none;
     border-right: none;
 }
+
     hr.dark {
         border-top: 1px solid #3e3e3e;
     }
+
 b, strong {
     font-weight: 600;
 }
@@ -512,9 +466,10 @@ p {
     .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6, .dark-bg p, .dark-bg .link, .dark-bg .container-icon, .dark-bg .page-icon-top {
         color: #fff;
     }
-    .dark-bg .link:hover, .link:hover {
-        color:#4BAAD8;
-    }
+
+        .dark-bg .link:hover, .link:hover {
+            color: #4BAAD8;
+        }
 
 .gray-bg {
     background: #f7f7f7;
@@ -635,7 +590,7 @@ h1.large {
 .btn, button {
     font-size: 12px;
     line-height: normal;
-    font-weight:700;
+    font-weight: 700;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1513,28 +1468,32 @@ form label.error {
     font-size: 17px;
     line-height: 24px;
 }
+
 .side-menu-btn-fix {
-    position:fixed;
-    top:25px;
-    right:25px;
-    z-index:2001;
-    font-size:17px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 2001;
+    font-size: 17px;
 }
-.side-menu-btn-fix a{
-    width:35px;
-    height:35px;
-    text-align:center;
-    background:rgba(0,0,0,0.8);
-    display:block;
-    border-radius:3px;
-    color:#fff;
-    line-height:34px;
-}
-    .side-menu-btn-fix a:hover {
-        background:#e6ae49;
+
+    .side-menu-btn-fix a {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        background: rgba(0,0,0,0.8);
+        display: block;
+        border-radius: 3px;
+        color: #fff;
+        line-height: 34px;
     }
+
+        .side-menu-btn-fix a:hover {
+            background: #e6ae49;
+        }
+
 header.sticky .navigation a.current-ele {
-    color:#4baad3 !important;
+    color: #4baad3 !important;
 }
 
 /* Right Side Menu Button Style*/
@@ -2287,7 +2246,7 @@ header.sticky .navigation a.current-ele {
         color: #fff;
         font-size: 18px;
         line-height: 0;
-        overflow:hidden;
+        overflow: hidden;
     }
 
         .side-menu .menu-close:hover {
@@ -2351,21 +2310,23 @@ header.sticky .navigation a.current-ele {
                 color: #e6ae49;
                 text-decoration: underline;
             }
+
     .side-menu .logo {
-        max-width:120px;
-        width:100%;
+        max-width: 120px;
+        width: 100%;
     }
 
     .side-menu .social {
-        list-style:none;
-       
+        list-style: none;
     }
+
         .side-menu .social li {
-            display:inline-block;
-            margin:0 10px 0 0;
+            display: inline-block;
+            margin: 0 10px 0 0;
         }
+
             .side-menu .social li a {
-                 font-size:16px;
+                font-size: 16px;
             }
 /* Top Searchbar Menu */
 .top-search-bar {
@@ -2508,30 +2469,31 @@ header.sticky .navigation a.current-ele {
         z-index: -1;
     }
 
-    .overlay-dark-custom:before {
-        height: 225px !important;
-    }
+.overlay-dark-custom:before {
+    height: 225px !important;
+}
 
-    .overlay-dark:before {
-        background-color: #4baad3;
-    }
+.overlay-dark:before {
+    background-color: #4baad3;
+}
 
-    .overlay-dark80:before {
-        background-color: rgba(32,32,32,0.8);
-    }
+.overlay-dark80:before {
+    background-color: rgba(32,32,32,0.8);
+}
 
-    .overlay-light:before {
-        background-color: rgba(255,255,255,0.4);
-    }
+.overlay-light:before {
+    background-color: rgba(255,255,255,0.4);
+}
 
-    .overlay-light80:before {
-        background-color: rgba(255,255,255,0.8);
-    }
+.overlay-light80:before {
+    background-color: rgba(255,255,255,0.8);
+}
 
 .full-screen-intro {
-    overflow:hidden;
-    position:relative;
+    overflow: hidden;
+    position: relative;
 }
+
 .content-cap-wraper {
     display: table;
     position: relative;
@@ -2539,15 +2501,17 @@ header.sticky .navigation a.current-ele {
     width: 100%;
     margin: 0 auto;
 }
+
 .full-cap-wraper {
     display: table;
     position: absolute;
-    top:0;
+    top: 0;
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    z-index:1;
+    z-index: 1;
 }
+
 .content-caption {
     display: table-cell;
     text-align: center;
@@ -2560,8 +2524,9 @@ header.sticky .navigation a.current-ele {
     margin-left: auto;
     margin-right: auto;
 }
+
 .cont-h-100per {
-height:100%;
+    height: 100%;
 }
 
 /*backround images*/
@@ -2607,8 +2572,7 @@ height:100%;
 }
 
 .bg-img8 {
-/*  background-image: url("../img/full/08.jpg"); */
-
+    /*  background-image: url("../img/full/08.jpg"); */
 }
 
 .bg-img9 {
@@ -2954,12 +2918,12 @@ height:100%;
         margin: 0px;
         padding-top: 0;
         padding-bottom: 15px;
-		font-size: 13px;
-		letter-spacing: 2px;
-		line-height: 23px;
-		font-weight: 600;
-		}
-	
+        font-size: 13px;
+        letter-spacing: 2px;
+        line-height: 23px;
+        font-weight: 600;
+    }
+
 
 
 .widget-search {
@@ -3704,15 +3668,15 @@ ul.project-detail-block, .project-detail-block ul {
 
 /* Full Width Slider */
 .fullwidth-slider {
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 }
 
-.fullwidth-slider .item {
-    height:650px;
-    position:relative;
-    width:100%;
-}
+    .fullwidth-slider .item {
+        height: 650px;
+        position: relative;
+        width: 100%;
+    }
 
 
 /* Fullscreen Slider Next Prev Arrow*/
@@ -4226,120 +4190,145 @@ ul.project-detail-block, .project-detail-block ul {
     color: #fff;
 }
 
-.scroll-down-main:hover {
-    color: rgba(255,255,255,0.85);
+    .scroll-down-main:hover {
+        color: rgba(255,255,255,0.85);
+    }
+
+/*.navbar-default .navbar-nav> li > a:hover{
+    color: #fbfbfb !important;
 }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fbfbfb;
+  background: none;
+}
+
+.navbar-fixed-top {
+    background: transparent;
+}
+
+.navbar-header {
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-fixed-top .navbar-nav > .active > a {
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-default .navbar-fixed-top .navbar-nav > li > a {
+    color: #fff;
+}
+
+#bs-example-navbar-collapse-1 {
+    margin-top: 15px;
+}
+
 
 #navbar-main {
-  /* Added `.affix-top` class css when the element is top */
-  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
-  /* Added `.affix-bottom` class css when the element is footer */
-  z-index: 2000;
-  
-  }
-#navbar-main.affix-top {
-  /*background: transparent; */
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border: none;
-  border-radius: 0px;
-}
+    /* Added `.affix-top` class css when the element is top */
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+    /* Added `.affix-bottom` class css when the element is footer */
+    /*z-index: 2000;*/
+/*}*/
 
-#navbar-main ul, #navbar-main li, #navbar-main a {
-  font-size: 12px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: all 0.25s ease 0s;
-  outline: none;
-}
+    #navbar-main.affix-top {
+        /*background: transparent; */
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: none;
+        border-radius: 0px;
+    }
 
-#navbar-main.affix {
-  background: white;
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: none;
-  border-bottom: 1px solid #f5f5f5;
-  border-radius: 0px;
-}
+    /*#navbar-main ul, #navbar-main li, #navbar-main a {
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        -webkit-transition: all 0.25s ease 0s;
+        outline: none;
+    }*/
 
-#navbar-main.affix a, li ,ul{
-  color: #323232
-}
+    /*#navbar-main.affix {
+        background: white;
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #f5f5f5;
+        border-radius: 0px;
+    }*/
 
-#navbar-main.affix a:hover {
-  color: #4baad3;
-}
+        /*#navbar-main.affix a, li, ul {
+            color: #323232;
+        }
 
-#navbar-main.affix-top a:hover {
-  color: #c6e4f1;
-}
+            #navbar-main.affix a:hover {
+                color: #4baad3;
+            }
+
+    #navbar-main.affix-top a:hover {
+        color: #c6e4f1;
+    }*/
 
 
-#navbar-main.affix-top   a, li, ul {
-  color: #fff
-}
+    /*#navbar-main.affix-top a, li, ul {
+        color: #fff;
+    }*/
 
-#navbar-main .active a, .open a {
-  background-color: inherit!important;
-  border-bottom: 2px solid #dcdcdc;
-}
+    /*#navbar-main .active a, .open a {
+        background-color: inherit !important;
+        border-bottom: 2px solid #dcdcdc;
+    }
 
-#navbar-main .active:after  {
-  display: none;
-}
+    #navbar-main .active:after {
+        display: none;
+    }
 
-#navbar-main .dropdown-menu {
-  opacity: 0.9!important;
-  margin-top: 10px;
-  right: auto;
-}
+    #navbar-main .dropdown-menu {
+        opacity: 0.9 !important;
+        margin-top: 10px;
+        right: auto;
+    }*/
 
-#navbar-main .dropdown-menu a, li ,ul{
-  color: #323232
-}
+        /*#navbar-main .dropdown-menu a, li, ul {
+            color: #323232;
+        }*/
 
-/*referenciak page styleing */
 
-#post-60 .post-header, #post-60 .post-meta{
-	display: none;
+
+#post-60 .post-header, #post-60 .post-meta {
+    display: none;
 }
 
 .testimonial-entry-title {
-	display: none!important;
+    display: none !important;
 }
 
 .testimonial-entry {
-	text-align: center;
-	font-size: 16px;
-	font-weight: strong;
-}
-
-.navbar-brand {
-	padding: 0px 15px !important;
-}
-
-.navbar-brand img {
-	height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: strong;
 }
 
 @media (min-width: 768px) {
-.navbar-header {
-	display: block !important;
-}
+    .navbar-header {
+        display: block !important;
+    }
 }
 
 .affix-top #brand-image-black {
-	display: none;
+    display: none;
 }
 
 .affix #brand-image-white {
-	display: none;
+    display: none;
 }
