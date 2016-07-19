@@ -382,12 +382,12 @@ h3 {
     line-height: 32px;
 }
 
-    h3:after {
+/*    h3:after {
         color: #4BAAD8;
         content: ".";
         font-size: 34px;
     }
-
+*/
 h4 {
     font-size: 17px;
     letter-spacing: 2px;
@@ -4137,13 +4137,13 @@ ul.project-detail-block, .project-detail-block ul {
             color: #323232;
         }*/
 
-/*
+
 @media (min-width: 768px) {
     .navbar-header {
-        display: block !important;
+    display: block !important;
     }
 }
-
+/*
 .affix-top #brand-image-black {
     display: none;
 }
