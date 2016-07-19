@@ -2794,13 +2794,21 @@ header.sticky .navigation a.current-ele {
             color: #e6ae49;
         }
 
-.sidebar-widget hr {
-    margin-bottom: 15px;
+.sidebar-widget {
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #efefef;
+    border-radius: 5px;
 }
 
 .sidebar-widget ul {
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0px 0px 5px;
+}
+
+.comment-author-link {
+	font-weight: bold;
 }
 
     .sidebar-widget ul li {
@@ -3151,6 +3159,11 @@ ul.project-detail-block, .project-detail-block ul {
 /*.blog-post {
     position: relative;
 }*/
+
+#blog {
+	background-color: #fdfdfd;
+}
+
 .blog-post {
     display: inline-block;
     width: 100%;
@@ -4302,4 +4315,14 @@ ul.project-detail-block, .project-detail-block ul {
 .dropdown-menu > .active > a:focus {
     color: #4BAAD8;
     background: none;
+}
+
+#szolgaltatasok p {
+	height: 100px;
+}
+
+.wpcf7-form-control-wrap input, .wpcf7-form-control-wrap textarea {
+    margin-bottom: 5px;
+	margin-top: 15px;
+   
 }

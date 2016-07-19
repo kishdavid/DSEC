@@ -127,7 +127,7 @@ dynamic_sidebar('fourth-footer-widget-area');
 -->
 
 		<section id="szolgaltatasok" class="ptb ptb-sm-80">
-            <div class="wow zoomIn container text-center animated" style="visibility: visible; animation-name: zoomIn;">
+            <div class="wow fadeIn container text-center animated" style="visibility: visible; animation-name: fadeIn;">
                 <h3>Szolgáltatások</h3>
                 <div class="spacer-60"></div>
                 <div class="row">
