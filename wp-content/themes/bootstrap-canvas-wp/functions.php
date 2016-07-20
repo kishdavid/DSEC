@@ -1069,7 +1069,7 @@ function bootstrapcanvaswp_comment( $comment, $args, $depth ) {
 	// Display trackbacks differently than normal comments.
   ?>
   <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-	<p><?php _e( 'Pingback:', 'bootstrapcanvaswp' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'bootstrapcanvaswp' ), '<span class="comment-meta edit-link"><span class="glyphicon glyphicon-pencil"></span> ', '</span>' ); ?></p>
+	<p><?php _e( 'Pingback:', 'bootstrapcanvaswp' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Szerkeszt', 'bootstrapcanvaswp' ), '<span class="comment-meta edit-link"><span class="glyphicon glyphicon-pencil"></span> ', '</span>' ); ?></p>
   <?php
 	break;
 	default :
@@ -1084,7 +1084,7 @@ function bootstrapcanvaswp_comment( $comment, $args, $depth ) {
             printf( ' <cite><b class="fn">%1$s</b> %2$s</cite>',
                 get_comment_author_link(),
                 // If current post author is also comment author, make it known visually.
-                ( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'bootstrapcanvaswp' ) . '</span>' : ''
+                ( $comment->user_id === $post->post_author ) ? '<span>' . __( '- a szerző ', 'bootstrapcanvaswp' ) . '</span>' : ''
             );
             printf( '<span class="glyphicon glyphicon-calendar"></span> <a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
                 esc_url( get_comment_link( $comment->comment_ID ) ),
@@ -1101,11 +1101,11 @@ function bootstrapcanvaswp_comment( $comment, $args, $depth ) {
 
       <section class="comment-content comment">
         <?php comment_text(); ?>
-        <?php edit_comment_link( __( 'Edit', 'bootstrapcanvaswp' ), '<p class="comment-meta edit-link"><span class="glyphicon glyphicon-pencil"></span> ', '</p>' ); ?>
+        <?php edit_comment_link( __( 'Szerkeszt', 'bootstrapcanvaswp' ), '<p class="comment-meta edit-link"><span class="glyphicon glyphicon-pencil"></span> ', '</p>' ); ?>
       </section><!-- .comment-content -->
 
       <div class="reply">
-		<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'bootstrapcanvaswp' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+		<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Válasz', 'bootstrapcanvaswp' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 	  </div><!-- .reply -->
       <hr />
 	</article><!-- #comment-## -->

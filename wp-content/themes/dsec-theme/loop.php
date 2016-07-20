@@ -96,15 +96,15 @@
         <?php if ( current_user_can( 'edit_posts' ) ) :
 			// Show a different message to a logged-in user who can add posts.
 		?>
-          <h2 class="center"><?php _e( 'No posts to display', 'bootstrapcanvaswp' ); ?></h2>
+          <h2 class="center"><?php _e( 'Nincs megjeleníthető bejegyzés.', 'bootstrapcanvaswp' ); ?></h2>
           <p class="center">
-          <?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'bootstrapcanvaswp' ), admin_url( 'post-new.php' ) ); ?></p>
+          <?php printf( __( 'Készen áll bejegyzésének publikálására? <a href="%s">Tegye meg itt</a>.', 'bootstrapcanvaswp' ), admin_url( 'post-new.php' ) ); ?></p>
         <?php else :
 			// Show the default message to everyone else.
 		?>
-          <h2 class="center"><?php _e( 'Nothing Found', 'bootstrapcanvaswp' ); ?></h2>
+          <h2 class="center"><?php _e( 'Nincs találat', 'bootstrapcanvaswp' ); ?></h2>
           <p class="center">
-          <?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'bootstrapcanvaswp' ); ?></p>
+          <?php /*_e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'bootstrapcanvaswp' ); */?></p>
 		  <?php get_search_form(); ?>
         <?php endif; // end current_user_can() check ?>
       <?php endif; ?>

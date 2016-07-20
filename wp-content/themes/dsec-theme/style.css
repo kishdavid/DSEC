@@ -2798,7 +2798,7 @@ header.sticky .navigation a.current-ele {
     margin-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #efefef;
+    background-color: #f1f1f1;
     border-radius: 5px;
 }
 
@@ -3161,7 +3161,7 @@ ul.project-detail-block, .project-detail-block ul {
 }*/
 
 #blog {
-	background-color: #fdfdfd;
+	background-color: #f7f7f7;
 }
 
 .blog-post {
