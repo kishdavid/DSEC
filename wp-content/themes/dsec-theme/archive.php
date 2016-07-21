@@ -25,7 +25,7 @@
 					elseif ( is_year() ) : 
 						printf( __( 'Évi Archívum: <span>%s</span>', 'bootstrapcanvaswp' ), get_the_date( _x( 'Y', 'yearly archives date format', 'bootstrapcanvaswp' ) ) );
 					else : 
-						_e( 'Blog Archives', 'bootstrapcanvaswp' ); 
+						_e( 'Blog Archív', 'bootstrapcanvaswp' ); 
 					endif; 
 				?>
 		  </h2>

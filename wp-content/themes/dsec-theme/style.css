@@ -4326,3 +4326,35 @@ ul.project-detail-block, .project-detail-block ul {
 	margin-top: 15px;
    
 }
+
+/*Referenciak page styling*/
+
+.referencia {
+	height: 180px;
+}
+
+.referencia:before {
+	content:"";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	
+}
+
+.referenciabox {
+	display: inline-block;
+	vertical-align: middle;
+	}
+
+.referencia img {
+	max-width: 200px;
+    max-height: 150px;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.referencia p {
+	margin: 0 0;
+	padding: 0 0;
+	font-size: 16px
+}

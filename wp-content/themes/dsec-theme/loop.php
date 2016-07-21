@@ -63,7 +63,7 @@
         ?>
         <p class="blog-post-meta post-meta">
         <?php if ( is_single() ) : ?>
-        <span class="glyphicon glyphicon-folder-open"></span> Posted in <?php the_category(', ') ?> 
+        <span class="glyphicon glyphicon-folder-open"></span> Kategória: <?php the_category(', ') ?> 
         <strong>|</strong>
         <?php endif; ?> 
         <?php if ( is_user_logged_in() ) : ?>
