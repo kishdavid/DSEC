@@ -4266,8 +4266,8 @@ ul.project-detail-block, .project-detail-block ul {
 
 .full-cap-wraper {
     position: relative;
-    padding-top: 140px !important;
-    padding-bottom: 140px !important;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
     background-size: cover;
 }
 

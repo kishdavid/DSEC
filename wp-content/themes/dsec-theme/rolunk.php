@@ -9,10 +9,10 @@
 
 get_header(); ?>
 	
-		<section class="full-screen-intro" id="welcome" style="height: 100%;">
-            <!-- Bg Image -->
+		<section class="full-screen-intro" id="welcome" style="height: 100vh;">
+            <!-- Bg Image 
             <div class="media-wapper cont-h-100per"></div>
-            <!-- End Bg Image -->
+             End Bg Image -->
 
             <!-- Content -->
             <div class="full-cap-wraper overlay-dark light-color">
