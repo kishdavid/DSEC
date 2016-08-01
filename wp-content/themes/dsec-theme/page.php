@@ -20,7 +20,7 @@
 			</div>
 		</div>
 	</section>
- page      
+
 	<div class="clearfix"></div>
 	
 	<section id="blog" class="wow fadeIn pt pb-80">

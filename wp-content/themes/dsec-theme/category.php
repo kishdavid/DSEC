@@ -17,7 +17,6 @@
 	</section>
        
 	<div class="clearfix"></div>
-category	   
 	   
 	<section id="blog" class="ptb ptb-sm-80">
 		<div class="container text-left">

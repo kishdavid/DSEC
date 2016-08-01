@@ -150,7 +150,7 @@ dynamic_sidebar('fourth-footer-widget-area');
                     <div class="col-md-5 col-sm-6 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-medkit-outline"></i></div>
                         <h5>FOGLALKOZÁS EGÉSZSÉGŰGY</h5>
-                        <p>Lorem ipsum dolor sit amet, dui arcu suscipit ultrices nisl semper luctus, lectus neque, interdum tempor. Interdum eu lorem sagittis donec. Gravida vestibulum eu in fermentum, gravida risus lectus, praesent auctor placerat. Nam est amet lorem cras sagittis eu.</p>
+                        <p>A jó munkának fontos alappillére a jó egészség, ebben nagy szerepe van a rendszeres egészségügyi állapot felmérésnek. A tudatos és egészséges életmód követése mellett, jogszabályi előírás is a dolgozók rendszeres foglalkozás egészségügyi orvosi vizsgálata.</p>
                         <p>
                             <a href="<?php bloginfo('url'); ?>/szolgaltatasok/foglalkozas-egeszsegugy"><button class="btn btn-md btn-black szolg-btn">Tovább</button></a>
                         </p>

@@ -25,7 +25,6 @@
 	</section>
        
 	<div class="clearfix"></div>
-index	   
 	   
 	<section id="blog" class="ptb ptb-sm-80">
 		<div class="container text-left">

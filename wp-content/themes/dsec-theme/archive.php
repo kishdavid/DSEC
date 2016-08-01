@@ -34,7 +34,6 @@
 	</section>
        
 	<div class="clearfix"></div>
-archive	   
 	
 	<section id="blog" class="ptb ptb-sm-80">
 		<div class="container text-left">

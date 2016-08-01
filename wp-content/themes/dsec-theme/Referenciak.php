@@ -27,7 +27,9 @@
                 <div class="row text-center">
                     <div class="col-md-12">
                         <div class="spacer-15"></div>
-                        <?php 
+                        <h3 class="lead">Alább, a teljesség igénye nélkül, találhatóak a már elégedett partnereink. Bízunk benne, hogy hamarosan Önt is elégedett ügyfeleink között köszönthetjük. Keressen minket bizalommal, hogy munka és tűzvédelmére ne legyen többé gondja.</h3>
+						
+<?php 
  
 //Define your custom post type name in the arguments
  

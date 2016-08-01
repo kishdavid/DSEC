@@ -17,7 +17,7 @@
 	</section>
        
 	<div class="clearfix"></div>
-404	   
+   
 	   
 	<section id="blog" class="ptb ptb-sm-80">
 		<div class="container text-left">

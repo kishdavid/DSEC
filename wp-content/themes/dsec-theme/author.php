@@ -17,8 +17,6 @@
 	</section>
        
 	<div class="clearfix"></div>
-author	   
-	
 	
       <div class="row">
 
